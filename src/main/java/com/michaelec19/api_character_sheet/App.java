@@ -1,4 +1,4 @@
-package com.michaelec19;
+package com.michaelec19.api_character_sheet;
 
 /**
  * Hello world!

@@ -1,7 +1,6 @@
-package com.michaelec19;
+package com.michaelec19.api_character_sheet;
 
 import static org.junit.Assert.assertTrue;
-
 import org.junit.Test;
 
 /**
