@@ -3,7 +3,7 @@ A dedicated RESTful API providing CRUD operations for Dungeons &amp; Dragons 5th
  
 # API Character Sheet 
 
-A **RESTful API** developed in Java for managing character sheets, suitable for role-playing games (TTRPGs) or general inventory systems.
+A **RESTful API** developed in Java for managing character sheets, suitable for role-playing games (TTRPGs).
 
 ---
 
@@ -19,7 +19,7 @@ A **RESTful API** developed in Java for managing character sheets, suitable for 
 
 1.  Clone the repository:
     ```bash
-    git clone [Your Repository URL, e.g., [https://github.com/michaelec19/api-character-sheet](https://github.com/michaelec19/api-character-sheet)]
+    git clone https://github.com/michaelec19/api-character-sheet
     cd api-character-sheet
     ```
 2.  Build the project, download all dependencies (Jersey, Grizzly, Jackson), and generate the executable JAR file:
