@@ -32,7 +32,7 @@ CREATE TABLE characters (
     initiative INT,
     speed INT,
     hit_point INT,
-    proficiency_bonus INT,
+    proficiency_bonus INT
 
 );
 
