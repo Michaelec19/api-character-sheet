@@ -11,7 +11,7 @@ import org.junit.Test;
  * @author Michaelec19
  * @since 1.0
  */
-public class CharacterTest {
+public class PlayerCharacterTest {
 
     /**
      * Tests the No-argument constructor.
@@ -20,7 +20,7 @@ public class CharacterTest {
     @Test
     public void testNoArgsConstructor() {
         // When an instance of the character is created using the no-arg constructor
-        Character character = new Character();
+        PlayerCharacter character = new PlayerCharacter();
 
         // Then, the instance must not be null
         assertNotNull("Character instance must not be null", character);
@@ -44,7 +44,7 @@ public class CharacterTest {
         CombatStats combat = new CombatStats(18, 5, 30, 80, 4);
 
         // 2. When the character is created using the full constructor
-        Character character = new Character(1L, info, stats, combat);
+        PlayerCharacter character = new PlayerCharacter(1L, info, stats, combat);
 
         // 3. Assertions (Verifications)
         
@@ -65,12 +65,12 @@ public class CharacterTest {
     }
 
     /**
-     * Tests the correct functioning of all getters and setters for the main Character class.
+     * Tests the correct functioning of all getters and setters for the main PlayerCharacter class.
      */
     @Test
     public void testSettersAndGetters() {
         // 1. Create a base instance
-        Character character = new Character();
+        PlayerCharacter character = new PlayerCharacter();
         
         // 2. Data to set
         long newId = 2L;

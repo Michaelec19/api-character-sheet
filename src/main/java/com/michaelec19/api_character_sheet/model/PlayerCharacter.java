@@ -9,7 +9,7 @@ package com.michaelec19.api_character_sheet.model;
  * @author Michaelec19
  * @since 1.0
  */
-public class Character {
+public class PlayerCharacter {
 
     // INSTANCE FIELDS
 
@@ -36,7 +36,7 @@ public class Character {
      * No-argument constructor required for JSON deserialization (Jackson)
      * and object mapping in the persistence layers (JDBC/JPA).
      */
-    public Character() {  
+    public PlayerCharacter() {  
     }
 
     /**
@@ -46,7 +46,7 @@ public class Character {
      * @param stats Object containing all six ability scores and XP.
      * @param combatStats Object containing Armor Class, Initiative, Speed, Hit Points and ProficiencyBonus.
      */
-    public Character(long id, BasicInfo basicInfo, Stats stats, CombatStats combatStats) {
+    public PlayerCharacter(long id, BasicInfo basicInfo, Stats stats, CombatStats combatStats) {
         this.id = id;
         this.basicInfo = basicInfo;
         this.stats = stats; 
