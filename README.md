@@ -47,7 +47,7 @@ The application follows a standard layered architecture. Phase 1 focused on esta
 ## 1. Data Model (/model)
 The main Character entity is implemented using the Composition principle (Módulo 2), grouping attributes into clean sub-classes:
 
-- Character.java: The main composition entity.
+- PlayerCharacter.java: The main composition entity.
 - BasicInfo.java: Name, Class, Level, Race.
 - Stats.java: Ability Scores (STR, DEX, CON, INT, WIS, CHA) and Experience Points (XP).
 - CombatStats.java: Armor Class (AC), proficiencyBonus, Initiative, Speed and Hit Points.
