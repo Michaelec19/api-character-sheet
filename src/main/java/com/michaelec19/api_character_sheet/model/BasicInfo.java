@@ -1,4 +1,6 @@
 package com.michaelec19.api_character_sheet.model;
+import jakarta.persistence.Column;
+import jakarta.persistence.Embeddable;
 
 /**
  * Represents the fundamental identity and metadata of a character
@@ -8,13 +10,20 @@ package com.michaelec19.api_character_sheet.model;
  * @since 1.0
  */
 
+@Embeddable
 public class BasicInfo {
 
     // INSTANCE FIELDS
-
+    @Column(name = "character_name")
     private  String name;
+
+    @Column(name = "class")
     private  String characterClass;
+
+    @Column(name = "character_level")
     private  int level;
+    
+    @Column(name = "race")
     private  String race;
 
 

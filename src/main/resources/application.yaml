@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/dnd_db?useSSL=false&serverTimezone=UTC
+    username: root
+    password: Tauro519. 
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update 
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    packages-to-scan: com.michaelec19.api_character_sheet.model

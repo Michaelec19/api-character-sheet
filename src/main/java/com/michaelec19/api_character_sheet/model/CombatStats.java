@@ -1,19 +1,31 @@
 package com.michaelec19.api_character_sheet.model;
-
+import jakarta.persistence.Column;
+import jakarta.persistence.Embeddable;
 /**
  * Represents the primary combat-related statistics of a character,
  * including Armor Class, Initiative, Speed, Hit Points and ProficiencyBonus.
  * @author Michaelec19
  * @since 1.0
  */
+
+@Embeddable
 public class CombatStats {
 
     // INSTANCE FIELDS
 
+    @Column(name = "armor_Class")
     private int armorClass;
+
+    @Column(name = "initiative")
     private int initiative;
+
+    @Column(name = "speed")
     private int speed;
+
+    @Column(name = "hit_Points")
     private int hitPoints;
+    
+    @Column(name = "proficiency_Bonus")
     private int proficiencyBonus;
 
 

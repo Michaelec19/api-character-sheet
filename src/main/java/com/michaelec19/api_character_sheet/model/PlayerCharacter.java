@@ -1,4 +1,5 @@
 package com.michaelec19.api_character_sheet.model;
+import jakarta.persistence.*;
 
 /**
  * The core entity representing a Dungeons & Dragons 5th Edition character.
@@ -9,25 +10,32 @@ package com.michaelec19.api_character_sheet.model;
  * @author Michaelec19
  * @since 1.0
  */
+
+@Entity
+@Table(name = "characters")
 public class PlayerCharacter {
 
     // INSTANCE FIELDS
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  long id;
     
     /** Basic identifying information like Name, Class, Level, and Race.
      * Composited from the BasicInfo class.
      */
+    @Embedded
     private  BasicInfo basicInfo;
     
     /** Core ability scores (STR, DEX, CON, INT, WIS, CHA) and Experience Points (XP). 
      * Composited from the Stats class.
      */
+    @Embedded
     private Stats stats;
     
     /** * Combat-related values such as Armor Class, Initiative, Speed, Hit Points and ProficiencyBonus.
      * Composited from the CombatStats class.
      */
+    @Embedded
     private CombatStats combatStats;
 
     // CONSTRUCTORS

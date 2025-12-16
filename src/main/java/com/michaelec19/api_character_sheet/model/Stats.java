@@ -1,4 +1,6 @@
 package com.michaelec19.api_character_sheet.model;
+import jakarta.persistence.Column;
+import jakarta.persistence.Embeddable;
 
 /**
  * Represents the six core Ability Scores (Strength, Dexterity, Constitution,
@@ -7,16 +9,29 @@ package com.michaelec19.api_character_sheet.model;
  * @author Michaelec19
  * @since 1.0
  */
+@Embeddable
 public class Stats {
 
     // INSTANCE FIELDS
-
+    @Column(name = "experience_Points")
     private int experiencePoints;
+
+    @Column(name = "strength")
     private int strength;
+
+    @Column(name = "dexterity")
     private int dexterity;
-    private int constitution;
-    private int intelligence;   
+
+    @Column(name = "constitution")
+    private int constitution; 
+
+    @Column(name = "intelligence")
+    private int intelligence; 
+
+    @Column(name = "wisdom")
     private int wisdom;
+    
+    @Column(name = "charisma")
     private int charisma;
 
    // CONSTRUCTORS
