@@ -14,19 +14,19 @@ public class CombatStats {
     // INSTANCE FIELDS
 
     @Column(name = "armor_Class")
-    private int armorClass;
+    private Integer armorClass;
 
     @Column(name = "initiative")
-    private int initiative;
+    private Integer initiative;
 
     @Column(name = "speed")
-    private int speed;
+    private Integer speed;
 
-    @Column(name = "hit_Points")
-    private int hitPoints;
+    @Column(name = "hit_Point")
+    private Integer hitPoints;
     
-    @Column(name = "proficiency_Bonus")
-    private int proficiencyBonus;
+    @Column(name = "proficiency_bonus")
+    private Integer proficiencyBonus;
 
 
     // CONSTRUCTORS

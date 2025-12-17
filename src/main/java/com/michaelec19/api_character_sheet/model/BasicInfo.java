@@ -21,7 +21,7 @@ public class BasicInfo {
     private  String characterClass;
 
     @Column(name = "character_level")
-    private  int level;
+    private  Integer level;
     
     @Column(name = "race")
     private  String race;

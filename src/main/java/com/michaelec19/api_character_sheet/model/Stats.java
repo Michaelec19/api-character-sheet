@@ -13,26 +13,26 @@ import jakarta.persistence.Embeddable;
 public class Stats {
 
     // INSTANCE FIELDS
-    @Column(name = "experience_Points")
-    private int experiencePoints;
+    @Column(name = "experience_points")
+    private Integer experiencePoints;
 
     @Column(name = "strength")
-    private int strength;
+    private Integer strength;
 
     @Column(name = "dexterity")
-    private int dexterity;
+    private Integer dexterity;
 
     @Column(name = "constitution")
-    private int constitution; 
+    private Integer constitution; 
 
     @Column(name = "intelligence")
-    private int intelligence; 
+    private Integer intelligence; 
 
     @Column(name = "wisdom")
-    private int wisdom;
+    private Integer wisdom;
     
     @Column(name = "charisma")
-    private int charisma;
+    private Integer charisma;
 
    // CONSTRUCTORS
 
